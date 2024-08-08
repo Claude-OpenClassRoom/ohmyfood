@@ -1,0 +1,235 @@
+/****** General ***********/
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+:root {
+    --main-color: #9356DC;
+    --main-bg-color: #FF79DA;
+    --filter-bg-color: #99E2D0;
+}
+
+.fa-solid {
+    color: var(--main-color);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.main-container {
+    width: 100%;
+    max-width: 1440px;
+    box-sizing: border-box;
+    padding: 0 50px;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.section-title {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+}
+
+.card img {
+    object-fit: cover;
+}
+
+.card-title {
+    font-size: 16px;
+}
+
+.euro {
+    font-weight: 700;
+}
+
+.neutral-star {
+    color: var(--main-bg-color)
+}
+
+/****** Header ***********/
+header nav {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav img {
+    margin-bottom: 20px;
+}
+
+header,
+footer {
+    padding: 20px 20px;
+}
+
+.nav li {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav a {
+    margin-left: 50px;
+    
+}
+.logo {
+    width: 61.09px;
+    height: 19px;
+    padding-top:30px;
+    color:#0065FC;
+}
+
+/****** Header ***********/
+header nav {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav img {
+    margin-bottom: 20px;
+}
+
+header,
+footer {
+    padding: 20px 20px;
+}
+
+.nav li {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav a {
+    margin-left: 50px;
+    
+}
+.logo {
+    width: 61.09px;
+    height: 19px;
+    padding-top:30px;
+    color:#0065FC;
+}
+
+
+/* Small devices (phones, less than 768px) */
+@media (max-width: 767.98px) {
+
+            /****** header ***********/
+
+            header nav {
+                display:flex;
+                flex-direction: column;
+                align-items: center;      
+                width:100%;
+                margin-bottom: 50px;
+              }              
+ 
+    
+            .logo{
+                float:center;
+                position:absolute;
+                width: 197px;
+                font-family: 'Shrinkhand', sans-serif;
+                height: 36px;
+            }                   
+
+    
+
+      /****** restaurants ***********/
+
+           
+           .restaurants {
+            display: flex;
+            flex-direction: column;
+            flex-wrap:wrap;
+            justify-content: space-between;
+            gap: 5px;
+            background: none;
+            margin-top: 0px;
+            margin-left: -30px;
+            
+        }
+    
+        .restaurants-cards {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 100%;
+            background-color: #FFFFFF;
+            gap: 15px;
+        }
+     
+        .restaurants-cards a {
+            width: 100%;                
+        }
+    
+        .restaurants-cards .card {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            width: 100%;
+            background-color: #FFFFFF;
+            border-radius: 20px 20px 20px 20px;
+        }
+    
+        .restaurants-cards .card-content {
+            display:flex;
+            flex-direction: row;
+            flex-wrap:wrap;
+            padding-left: 15px;           
+            justify-content: space-between;
+            box-sizing: border-box;
+            gap: 5px;
+        } 
+    
+        .restaurants-cards img {
+            width: 100%;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            object-fit: cover;
+        }
+
+        .restaurants-cards .like{
+            font-size: 25px;
+            margin-top: 15px;
+            margin-right: 20px;
+        }
+    
+        .restaurants-cards .card-title {
+            margin-bottom: 5px;
+            font-size: 18px;
+            font-weight: 700;
+        }
+    
+        .restaurants-cards .card-subtitle {
+            font-size: 17px;
+            font-weight: 300;
+            color:#000000;
+        }
+    
+        .restaurants .afficher-plus {
+            margin-top: 15px;
+        }
+
+
+}
