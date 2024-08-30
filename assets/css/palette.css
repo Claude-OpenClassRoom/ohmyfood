@@ -1,5 +1,6 @@
     
     /****** General ***********/
+    @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
 * {
     font-family: 'Roboto', sans-serif;
 }
@@ -23,7 +24,7 @@ body {
     max-width: 1440px;
     box-sizing: border-box;
     width:100%;
-    padding: 0 50px;
+
 }
 
 a {
@@ -95,10 +96,13 @@ a {
 
     header .image_palette{
         width:100%;
+        height: 275px;
+        object-fit: cover;
     }
 
     header .palette_img{
         padding-top: 50px;
+        width: 100%;
     }
 
     header .logo_site{
@@ -232,6 +236,10 @@ padding-bottom: 30px;
     font-size:15.04px;
     line-height: 17.63px;         
     width: 80%;
+    max-width: 300px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
     }
 
     .prix{
@@ -261,8 +269,7 @@ padding-bottom: 30px;
       }
 
     .commander{
-        position: relative;
-        margin-left: 90px;
+        text-align: center;
     }
 
     /****** footer ***********/
@@ -351,6 +358,8 @@ padding-bottom: 30px;
 
     header .palette_img {
         padding-top: 50px;
+        padding-top: 50px;
+        width: 100%;
     }
 
     /*****Menu La Palette du goût ********/
@@ -363,6 +372,7 @@ padding-bottom: 30px;
         margin-top: -50px;
         padding-bottom: 30px;
         margin-left: 200px;
+        
     }
 
     .titre-menu {
@@ -396,9 +406,7 @@ padding-bottom: 30px;
     }
      
     .commander {
-        position: relative;
-        margin-left: 300px;
-        
+        text-align:center;        
     }
 
     /****** Footer ***********/

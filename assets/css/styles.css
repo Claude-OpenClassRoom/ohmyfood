@@ -121,6 +121,10 @@ a {
         width:100%;
      }
      
+     .explorer{
+        text-align: center;
+     }
+
      .btn_explorer {
         background-color: white;  
         border: 2px #D9D9D9 solid;
@@ -136,7 +140,7 @@ a {
         box-sizing: border-box;
         background-image: linear-gradient(#9356DC, #FF79DA);
         box-shadow: 0px 4px 4px 0px #00000040;
-
+        padding: 15px;
       }
       .texte_menu{
         padding-left: 80px;
@@ -150,7 +154,7 @@ a {
         color: #353535;
         padding-left: 60px;
         text-indent: -30px;
-        
+        padding-bottom: 30px;
       }
    
        /****** Fonctionnement ***********/
@@ -330,6 +334,16 @@ a {
     
         .restaurants .afficher-plus {
             margin-top: 15px;
+        }
+
+        .full-heart{
+            opacity: 0;
+            transition-property: all;
+            transition-duration: 2s;
+        }
+        .full-heart:hover{
+            opacity: 1;
+            color: #9747ff;
         }
 
          /****** footer ***********/
