@@ -1,0 +1,552 @@
+@charset "UTF-8";
+/****** General ***********/
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+:root {
+  --main-color: #9356DC;
+  --main-bg-color: #FF79DA;
+  --filter-bg-color: #99E2D0;
+}
+
+.fa-solid {
+  color: var(--main-color);
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  margin: 0px;
+}
+
+.main-container {
+  max-width: 1440px;
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.section-title {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+.card {
+  background-color: white;
+  border-radius: 20px;
+  padding: 5px;
+  filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+}
+
+.card img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.card-title {
+  font-size: 16px;
+}
+
+.euro {
+  font-weight: 700;
+}
+
+.neutral-star {
+  color: var(--main-bg-color);
+}
+
+/* Small devices (phones, less than 768px) */
+/****** header ***********/
+header {
+  width: 100%;
+}
+
+header nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+header .logo {
+  float: center;
+  position: absolute;
+  width: 197px;
+  font-family: "Shrinkhand", sans-serif;
+  height: 36px;
+  margin-top: 20px;
+}
+
+header .localisation {
+  background: #EAEAEA;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 80px;
+  gap: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  justify-content: center;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
+  width: 100%;
+}
+
+header .vector {
+  color: #000000;
+  font-size: 18px;
+}
+
+/****** réservation ***********/
+.reservation {
+  width: 100%;
+  background: #F6F6F6;
+  padding-bottom: 30px;
+  margin-top: -15px;
+}
+
+.reservez {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: -15px;
+  width: 100%;
+}
+
+.explorer {
+  text-align: center;
+}
+
+.btn_explorer {
+  background-color: white;
+  border: 2px #D9D9D9 solid;
+  border-radius: 25px 25px 25px 25px;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 21.13px;
+  color: #FFFFFF;
+  text-align: center;
+  height: 50px;
+  box-sizing: border-box;
+  background-image: linear-gradient(#9356DC, #FF79DA);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
+  padding: 15px;
+}
+
+.btn_explorer:hover {
+  background-image: linear-gradient(#FF79DA, #FF79DA);
+  box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.2509803922);
+}
+
+.texte_menu {
+  padding-left: 80px;
+  text-indent: -30px;
+}
+
+.texte_reservez {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  color: #353535;
+  padding-left: 60px;
+  text-indent: -30px;
+  padding-bottom: 30px;
+}
+
+/****** Fonctionnement ***********/
+.fonctionnement {
+  padding-left: 30px;
+  width: 80%;
+}
+
+.section-filtre {
+  display: flex;
+  flex-direction: column;
+  align-items: normal;
+  margin-top: 20px;
+  background: none;
+  margin-bottom: 50px;
+  width: 95%;
+}
+
+.filtre-choix {
+  display: flex;
+  flex-direction: column;
+  align-items: normal;
+  justify-content: center;
+  gap: 15px;
+  width: 100%;
+}
+
+.bouton-filtre {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+
+.bouton-choix {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 21.13px;
+  color: #000000;
+  text-align: center;
+}
+
+.icone {
+  width: 10%;
+  color: #7E7E7E;
+  margin-right: 15px;
+  text-align: center;
+  font-size: 20px;
+}
+
+.icone1 {
+  width: 10%;
+  color: #9356DC;
+  margin-right: 15px;
+  text-align: center;
+  font-size: 20px;
+}
+
+.ellipse {
+  width: 24px;
+  height: 24px;
+  color: #F6F6F6;
+  border-radius: 50%;
+  border: 1px #D9D9D9 solid;
+  text-align: center;
+  background: #9356DC;
+  margin-left: -25px;
+}
+
+.bouton-filtre {
+  width: 100%;
+  background-color: #F6F6F6;
+  box-shadow: 0px 4px 15px 0px #000000;
+  border-radius: 20px 20px 20px 20px;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 21.13px;
+  color: #000000;
+  text-align: center;
+  height: 50px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-decoration: none;
+  margin-right: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.division-filtre {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+/****** restaurants ***********/
+.restaurants {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 5px;
+  background: none;
+  margin-top: 0px;
+  width: 80%;
+  padding-left: 30px;
+}
+
+.restaurants-cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  background-color: #FFFFFF;
+  gap: 15px;
+}
+
+.restaurants-cards a {
+  width: 100%;
+}
+
+.restaurants-cards .card {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+  background-color: #FFFFFF;
+  border-radius: 20px 20px 20px 20px;
+}
+
+.restaurants-cards .card-content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-left: 15px;
+  justify-content: space-between;
+  box-sizing: border-box;
+  gap: 5px;
+}
+
+.restaurants-cards img {
+  width: 100%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.restaurants-cards .card-title {
+  margin-bottom: 5px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.restaurants-cards .card-subtitle {
+  font-size: 17px;
+  font-weight: 300;
+  color: #000000;
+}
+
+.restaurants .afficher-plus {
+  margin-top: 15px;
+}
+
+.card-rating .like {
+  font-size: 25px;
+  margin-top: 15px;
+  margin-right: 20px;
+  opacity: 1;
+  color: #9747ff;
+}
+
+.card-rating .full-heart {
+  display: none;
+  font-size: 25px;
+  margin-top: 15px;
+  margin-right: 20px;
+  opacity: 1;
+  color: #9747ff;
+  transition-property: all;
+  transition-duration: 2s;
+}
+
+.card-rating:hover .full-heart {
+  display: block;
+}
+
+.card-rating:hover .like {
+  display: none;
+}
+
+/****** footer ***********/
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  margin-top: 50px;
+  background-color: #353535;
+  padding-left: 20px;
+  height: 200px;
+}
+
+footer .footer_choix {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+footer .footer_logo {
+  font-family: shrinkland;
+  font-style: italic;
+  font-size: 24px;
+  color: #FFFFFF;
+}
+
+footer .proposition {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 15px;
+}
+
+footer .partenaire {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 10px;
+}
+
+footer .fork {
+  font-size: 16px;
+  color: #FFFFFF;
+}
+
+footer .hand {
+  font-size: 16px;
+  color: #FFFFFF;
+}
+
+footer .texte_footer {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500px;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+  width: 100%;
+  white-space: nowrap;
+}
+
+fooeter legal_footer {
+  text-overflow: clip;
+  text-align: center;
+}
+
+/* Le code ci-dessous correspond à la version responsive uniquement */
+/****** Media queries ***********/
+/* Large devices (tablets, desktop less/equal than 1440px) */
+@media (min-width: 767.98px) {
+  /****** réservation ***********/
+  .reservation .reservez {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: -15px;
+    width: 90%;
+  }
+  .reservation .texte_menu {
+    padding-left: 80px;
+    text-indent: -30px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 46.88px;
+  }
+  /****** restaurants ***********/
+  .restaurants {
+    padding-left: 150px;
+    width: 75%;
+    padding-bottom: 30px;
+  }
+  .restaurants-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    background-color: #FFFFFF;
+    gap: 120px;
+  }
+  .restaurants-cards .card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 15px;
+    background-color: #FFFFFF;
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+  .restaurants-cards img {
+    width: 100%;
+    height: 250px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    margin-bottom: -30px;
+  }
+  .restaurants-cards .card-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    background: #FFFFFF;
+    width: 100%;
+    border-radius: 0px 0px 20px 20px;
+    padding: 0px 15px 0px 15px;
+    gap: 5px;
+  }
+  .restaurants-cards .card-title {
+    margin-top: 10px;
+  }
+  .restaurants-cards .card-subtitle {
+    margin: 0;
+  }
+  .card-txt {
+    display: flex;
+    flex-direction: column;
+  }
+  .restaurants-cards .card-rating {
+    margin-bottom: 5px;
+  }
+  /****** Fonctionnement ***********/
+  .fonctionnement {
+    padding-left: 150px;
+    width: 75%;
+  }
+  .filtre-choix {
+    display: flex;
+    flex-direction: row;
+    align-items: normal;
+    justify-content: center;
+    gap: 15px;
+    width: 100%;
+  }
+  .bouton-choix {
+    font-family: "Raleway", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 21.13px;
+    color: #000000;
+    text-align: center;
+    width: 211px;
+  }
+  /****** Footer ***********/
+  footer {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 120px;
+    margin-top: 0px;
+    height: 114px;
+    padding-top: 40px;
+    padding-left: 300px;
+  }
+  footer .footer_choix {
+    padding-top: 40px;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    padding-left: 40px;
+  }
+  footer .footer_logo {
+    font-family: shrinkland;
+    font-style: italic;
+    font-size: 24px;
+    color: #FFFFFF;
+  }
+  footer .footer_img {
+    padding-top: 20px;
+  }
+  footer footer_texte {
+    white-space: nowrap;
+  }
+}/*# sourceMappingURL=styles.css.map */
