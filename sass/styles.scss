@@ -9,7 +9,6 @@
   color: #514b82;
   position: absolute;
   height: 100%;
-
 }
 .loader::before,
 .loader::after {
@@ -21,7 +20,7 @@
     repeating-linear-gradient(90deg,currentColor 0 25%,#0000 0 50%) calc(var(--s,0)*100%) 50%/calc(4*100%/3) calc(100%/3);
   background-repeat: no-repeat;
   animation: l26 2s infinite; 
-  animation-delay: 700ms;
+  animation-delay: 1s;
     
 }
 .loader::after {
@@ -45,7 +44,7 @@
 	top: 0;
 	width: 100%;
 	z-index: 9999;
-
+  position: absolute;
 }
 
 * {
@@ -126,7 +125,6 @@ a {
 
 
     header .logo{
-        float:center;
         position:absolute;
         width: 197px;
         font-family: 'Shrinkhand', sans-serif;
@@ -468,7 +466,7 @@ a {
 
           footer .texte_footer{
             font-family: 'Roboto', sans-serif;
-            font-weight: 500px;
+            font-weight: 500;
             font-size: 16px;
             line-height: 19px;
             color: #FFFFFF;

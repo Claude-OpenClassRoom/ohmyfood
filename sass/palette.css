@@ -85,7 +85,6 @@ header .return {
 }
 
 header .logo {
-  float: center;
   width: 197px;
   font-family: "Shrinkhand", sans-serif;
   height: 36px;
@@ -408,7 +407,7 @@ footer .hand {
 
 footer .texte_footer {
   font-family: "Roboto", sans-serif;
-  font-weight: 500px;
+  font-weight:500;
   font-size: 16px;
   line-height: 19px;
   color: #FFFFFF;
