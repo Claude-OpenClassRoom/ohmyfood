@@ -422,18 +422,32 @@ fooeter legal_footer {
 }
 
 /*Animations des menus */
-.menu_validation {
+.menu-choix {
+  opacity: 0;
   transform-origin: top;
-  animation: slide 2s 2000ms;
+  animation: slide 2s 1200ms;
+  opacity: 1;
 }
 
 @keyframes slide {
   0% {
-    opacity: 0;
-    transform: translateY(-9999px);
+    transform: scaleY(0);
+    opacity: 0.1;
+  }
+  17% {
+    transform: scaleY(0.18);
+  }
+  24% {
+    transform: scaleY(0.4);
+  }
+  46% {
+    transform: scaleY(0.81);
+  }
+  85%, 100% {
+    opacity: 1;
   }
   100% {
-    transform: translateY(0);
+    transform: scaleY(1);
   }
 }
 /* Le code ci-dessous correspond à la version responsive uniquement */
