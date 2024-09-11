@@ -305,13 +305,13 @@ header .logo_site {
   transition-duration: 2s;
 }
 
-.menu_validation:checked .validation_choix {
+.menu_validation:active .validation_choix {
   opacity: 1;
   width: 80px;
   margin-left: 0px;
 }
 
-.menu_validation:checked .price_check {
+.menu_validation:active .price_check {
   margin-left: -50px;
 }
 
@@ -350,11 +350,11 @@ header .logo_site {
   transition-duration: 2s;
 }
 
-.menu-rating:checked .full-heart {
+.menu-rating:active .full-heart {
   display: block;
 }
 
-.menu-rating:checked .like {
+.menu-rating:active .like {
   display: none;
 }
 
@@ -421,6 +421,21 @@ fooeter legal_footer {
   text-align: center;
 }
 
+/*Animations des menus */
+.menu_validation {
+  transform-origin: top;
+  animation: slide 2s 2000ms;
+}
+
+@keyframes slide {
+  0% {
+    opacity: 0;
+    transform: translateY(-9999px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
 /* Le code ci-dessous correspond à la version responsive uniquement */
 /****** Media queries ***********/
 /* Large devices (tablets, desktop less/equal than 1440px) */
