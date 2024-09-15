@@ -8,8 +8,18 @@
   aspect-ratio: 1;
   color: #514b82;
   position: absolute;
-  height: 100%;
+  animation: cache 2s forwards;
 }
+
+ @keyframes cache {
+    0% {
+       display:block;
+    }
+    100%{
+        display:none;
+        height: 100%;
+    }
+}        
 .loader::before,
 .loader::after {
   content: "";
@@ -19,7 +29,7 @@
     linear-gradient(currentColor 0 0) 0 calc(var(--s,0)*-100%)/100% calc(100%/3),
     repeating-linear-gradient(90deg,currentColor 0 25%,#0000 0 50%) calc(var(--s,0)*100%) 50%/calc(4*100%/3) calc(100%/3);
   background-repeat: no-repeat;
-  animation: l26 2s infinite; 
+  animation: loader 2s infinite; 
   animation-delay: 1s;
     
 }
@@ -27,7 +37,7 @@
   --s:-1;
  
 }
-@keyframes l26 {
+@keyframes loader {
     0%   {opacity:1;}
     10%  {transform:translateY(calc(var(--s,1)*0));   background-position: 0 calc(var(--s,0)*-100%),calc(var(--s,0)*100%) 50%}
     33%  {transform:translateY(calc(var(--s,1)*-20%));background-position: 0 calc(var(--s,0)*-100%),calc(var(--s,0)*100%) 50%}
@@ -64,7 +74,8 @@
 body {
     display: flex;
     justify-content: center;
-    margin:0px;
+    width:100%;
+
 }
 
 .main-container {
@@ -126,7 +137,6 @@ a {
 
     header .logo{
         position:absolute;
-        width: 197px;
         font-family: 'Shrinkhand', sans-serif;
         height: 36px;
         margin-top: 20px;
@@ -166,6 +176,7 @@ a {
         justify-content: center;
         margin-top: -15px;
         width:100%;
+        text-align: center;
      }
      
      .explorer{
@@ -195,50 +206,36 @@ a {
         box-shadow: 0px 8px 8px 0px #00000040;
       }
 
-      .texte_menu{
-        padding-left: 80px;
-        text-indent: -30px;
-      }
-
       .texte_reservez{
         font-family: "Roboto",sans-serif;
         font-weight: 300;
         font-size: 18px;
         color: #353535;
-        padding-left: 60px;
-        text-indent: -30px;
         padding-bottom: 30px;
       }
    
        /****** Fonctionnement ***********/
-    .fonctionnement{
-        padding-left: 30px;
-        width:80%;
+    .fonctionnement{        
+        width: 100%;
+        margin-left:10px;    
     }   
 
     .section-filtre{    
         display:flex;
         flex-direction: column;
-        align-items: normal;
         margin-top:20px;
         background: none; 
         margin-bottom: 50px;  
-        width:95%;
+        width: 95%;
         }
 
         .filtre-choix{
             display:flex;
             flex-direction: column;
             align-items: normal; 
-            justify-content: center; 
             gap: 15px; 
-            width:100%;
-        }
-
-        .bouton-filtre {
-            display: flex;
-            flex-direction: row;
-            gap: 15px;        
+            width:95%;
+            margin-left: 20px;
         }
 
         .bouton-choix{    
@@ -251,18 +248,14 @@ a {
         text-align: center;
         }
 
-        .icone{
-        width:10%;
+        .icone{       
         color: #7E7E7E;
-        margin-right: 15px;
         text-align: center;
         font-size:20px;
         }
 
         .icone1{
-            width:10%;
             color: #9356DC;
-            margin-right: 15px;
             text-align: center;
             font-size:20px;
         }
@@ -275,12 +268,11 @@ a {
             border: 1px #D9D9D9 solid;
             text-align: center;
             background: #9356DC; 
-
-            margin-left: -25px;                  
+            position:relative; 
+            margin-left: -10px;                 
             }
 
-        .bouton-filtre {
-        width:100%;
+        .bouton-filtre {   
         background-color: #F6F6F6;  
         box-shadow: 0px 4px 15px 0px #000000;
         border-radius: 20px 20px 20px 20px;
@@ -291,18 +283,15 @@ a {
         line-height: 21.13px;
         color: #000000;
         text-align: center;
-        height: 50px;
+        height: 80px;
         box-sizing: border-box;
         display: flex;
         flex-direction:row;
         align-items: center;
         text-decoration: none;
-        margin-right:15px;
-        padding-left: 15px;
-        padding-right: 15px;
         padding-top: 30px;
         padding-bottom: 30px;
-
+        gap: 15px; 
         }
 
         .division-filtre{
@@ -321,20 +310,38 @@ a {
             flex-wrap:wrap;
             justify-content: space-between;
             gap: 5px;
-            background: none;
             margin-top: 0px;
-            width: 80%;
-            padding-left: 30px;
-            
+            width: 100%; 
+            background: #F6F6F6;
+            padding-top: 30px;
+            margin-left:10px;            
+        }
+
+        .new{
+            font-family: 'Roboto', sans-serif;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 16.41px;
+            color: #008766;
+            position:absolute;
+            background: #99E2D0;
+            width:61px;
+            height:16px;
+            padding-top:7px;
+            padding-bottom: 7px;
+            padding-left:20px;
+            padding-right:20px;
+            margin-top:20px;
+            margin-left: 190px;
         }
     
         .restaurants-cards {
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            width: 100%;
-            background-color: #FFFFFF;
+            width: 95%;
             gap: 15px;
+            background: #F6F6F6;
         }
      
         .restaurants-cards a {
@@ -387,30 +394,62 @@ a {
         .card-rating .like{
             font-size: 25px;
             margin-top: 15px;
-            margin-right: 20px;
+            margin-right:-27px;
+            position:relative;
             opacity: 1;
             color: #9747ff;
+            transition-property: all;
+            transition-duration: 5s;
         }
 
         .card-rating .full-heart{
-            display:none;
+            opacity:0;
             font-size: 25px;
             margin-top: 15px;
             margin-right: 20px;
+            color: #9747ff;
+            transition-property: all;
+            transition-duration: 5s;
+        }
+
+        .card-rating:hover .full-heart{
+            opacity:1;
+        }
+
+        .card-rating:hover .like{
+            opacity:0;
+        }
+
+        .card-rating .full-heart2{
+            font-size: 25px;
+            margin-top: 15px;
+            margin-right:-27px;
+            position:relative;            
             opacity: 1;
             color: #9747ff;
             transition-property: all;
             transition-duration: 2s;
-
         }
 
-        .card-rating:hover .full-heart{
-            display:block;
+        .card-rating .like2{
+            opacity:0;
+            font-size: 25px;
+            margin-top: 15px;
+            margin-right: 20px;
+            color: #9747ff;
+            transition-property: all;
+            transition-duration: 5s;
         }
 
-        .card-rating:hover .like{
-            display:none;
+        .card-rating:hover .full-heart2{
+            opacity:0;
         }
+
+        .card-rating:hover .like2{
+            opacity:1;
+        }
+
+
 
          /****** footer ***********/
 
@@ -484,7 +523,7 @@ a {
 /****** Media queries ***********/
 /* Large devices (tablets, desktop less/equal than 1440px) */
 
-@media (min-width: 767.98px) {
+@media (min-width: 1024px) {
 
           /****** réservation ***********/
          .reservation .reservez {
@@ -493,31 +532,55 @@ a {
             align-items: center;
             justify-content: center;
             margin-top: -15px;
-            width: 90%;
+            width: 100%;
         }
 
         .reservation .texte_menu {
-            padding-left: 80px;
-            text-indent: -30px;
             font-weight: 700;
             font-size: 40px;
             line-height: 46.88px;
+            text-align: center;
         }
 
         /****** restaurants ***********/
         .restaurants{
-            padding-left: 150px;
-            width: 75%;
+            width: 100%;
             padding-bottom: 30px;
+            background: #F6F6F6; 
+        }
+
+        .new{
+            font-family: 'Roboto', sans-serif;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 16.41px;
+            color: #008766;
+            position:absolute;
+            background: #99E2D0;
+            width:61px;
+            height:16px;
+            padding-top:7px;
+            padding-bottom: 7px;
+            padding-left:20px;
+            padding-right:20px;
+            margin-top: 20px;
+            margin-left: 320px;
+
         }
 
         .restaurants-cards {
             display: flex;
             flex-direction: row;
             justify-content: center;
-            width: 100%;
-            background-color: #FFFFFF;
+            width: 75%;
+            padding-left: 200px;
             gap: 120px;
+            background: #F6F6F6;
+        }
+
+        .restaurants-title{
+            width: 75%;
+            padding-left: 200px;
         }
 
         .restaurants-cards .card {
@@ -574,16 +637,19 @@ a {
                /****** Fonctionnement ***********/
 
         .fonctionnement{
-            padding-left: 150px;
-            width: 75%
+            width: 100%;
+        }
+        .titre-filtre{
+            width: 75%;
+            padding-left: 200px;
         }
         .filtre-choix{
             display:flex;
             flex-direction: row;
             align-items: normal; 
-            justify-content: center; 
-            gap: 15px; 
-            width:100%;
+            gap: 30px; 
+            width: 75%;
+            padding-left: 200px;
         } 
         
         .bouton-choix{    
@@ -594,7 +660,10 @@ a {
             line-height: 21.13px;
             color: #000000;
             text-align: center;
-            width:211px;
+            white-space: nowrap;
+            overflow: hidden;
+            margin-right: 80px;
+            
             }
 
              /****** Footer ***********/
@@ -606,7 +675,7 @@ a {
                 margin-top:0px;  
                 height: 114px;
                 padding-top: 40px; 
-                padding-left: 300px; 
+                padding-left: 380px; 
             }
 
             footer .footer_choix{
@@ -631,9 +700,15 @@ a {
 
             footer footer_texte{
                 white-space: nowrap;
-            }
+            }           
             
-            
+
+}
+
+/****** Media queries ***********/
+/* medium devices (tablets, desktop less/equal than 767.98 px) */
+
+@media (min-width: 767.98px) {
 
 }
 
