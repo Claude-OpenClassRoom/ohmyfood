@@ -74,7 +74,7 @@
 body {
     display: flex;
     justify-content: center;
-    width:100%;
+
 
 }
 
@@ -223,7 +223,7 @@ a {
        /****** Fonctionnement ***********/
     .fonctionnement{        
         width: 100%;
-        margin-left:10px;    
+  
     }   
 
     .section-filtre{    
@@ -320,7 +320,7 @@ a {
             width: 100%; 
             background: #F6F6F6;
             padding-top: 30px;
-            margin-left:10px;            
+         
         }
 
         .new{
@@ -337,8 +337,7 @@ a {
             padding-bottom: 7px;
             padding-left:20px;
             padding-right:20px;
-            margin-top:20px;
-            margin-left: 190px;
+
         }
     
         .restaurants-cards {
@@ -361,6 +360,26 @@ a {
             width: 100%;
             background-color: #FFFFFF;
             border-radius: 20px 20px 20px 20px;
+            position: relative;
+        }
+
+        .new{
+            font-family: 'Roboto', sans-serif;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 16.41px;
+            color: #008766;
+            position:absolute;
+            background: #99E2D0;
+            width:61px;
+            height:16px;
+            padding-top:7px;
+            padding-bottom: 7px;
+            padding-left:20px;
+            padding-right:20px;
+            right: 20px;
+            top: 20px;
+
         }
     
         .restaurants-cards .card-content {
@@ -569,8 +588,8 @@ a {
             padding-bottom: 7px;
             padding-left:20px;
             padding-right:20px;
-            margin-top: 20px;
-            margin-left: 320px;
+            right: 20px;
+            top: 20px;
 
         }
 
@@ -598,7 +617,7 @@ a {
             width: 100%;
             border-top-left-radius: 20px;
             border-top-right-radius: 20px;
-                   
+            position:relative;     
         }
     
         .restaurants-cards img {

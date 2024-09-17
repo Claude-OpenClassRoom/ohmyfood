@@ -83,10 +83,10 @@ a {
     }
 
     header .return{
-        margin-top: 40px;
+
         font-size: 20px;
         color: #353535;
-        width: 20%;
+
        
     }
 
@@ -97,6 +97,7 @@ a {
         height: 36px;
         margin-top: 30px;
         text-align: center;
+        margin:auto;
     }
 
     header .image_palette{
@@ -255,7 +256,7 @@ padding-bottom: 30px;
 
     .price_check{
      width:10%;
-     text-align: right;   
+     text-align: center;   
     }
 
     .prix{
@@ -306,7 +307,7 @@ padding-bottom: 30px;
         width: 0px;
         background-color: #99E2D0;
         text-align: center;
-        margin-left: -80px;
+        margin-left: -90px;
         border-radius: 0px 15px 15px 0px;
         padding-top: 20px;
         padding-left: 10px;
@@ -316,7 +317,7 @@ padding-bottom: 30px;
 
     .menu_validation:active .validation_choix {
         opacity:1;
-        width: 80px;
+        width: 90px;
         margin-left: 0px;        
     }
 
@@ -519,7 +520,6 @@ $menu-delay: $prog-menu-dur + $prog-menu-delay;
         width: 100%;
         align-items: center;
         padding-top: 30px;
-        gap: 220px;
         text-align: center;
     }
 
@@ -629,7 +629,7 @@ $menu-delay: $prog-menu-dur + $prog-menu-delay;
         border: 1px #D9D9D9 solid;
         text-align: center;
         background: white;
-        margin-right: 10px;
+        margin-right: 20px;
         padding: 2px;
 
      }
