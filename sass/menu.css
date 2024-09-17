@@ -246,6 +246,7 @@ header .logo_site {
 
 .price_check {
   width: 10%;
+  text-align: right;
 }
 
 .prix {
@@ -310,7 +311,7 @@ header .logo_site {
 }
 
 .menu_validation:active .price_check {
-  margin-left: -50px;
+  margin-left: -10px;
 }
 
 .check {
@@ -564,11 +565,12 @@ fooeter legal_footer {
   }
   .menu_validation:hover .validation_choix {
     opacity: 1;
-    width: 80px;
-    margin-left: 0px;
+    width: 60px;
+    margin-left: -10px;
+    text-align: right;
   }
   .menu_validation:hover .price_check {
-    margin-left: -50px;
+    margin-left: 60px;
   }
   .check {
     width: 20px;
