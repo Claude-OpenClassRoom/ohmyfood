@@ -74,7 +74,7 @@
 body {
     display: flex;
     justify-content: center;
-
+    margin:0px;
 
 }
 
@@ -320,7 +320,7 @@ a {
             width: 100%; 
             background: #F6F6F6;
             padding-top: 30px;
-         
+            margin-left:10px;            
         }
 
         .new{
@@ -493,7 +493,19 @@ a {
           footer .footer_choix{
             display: flex;
             flex-direction: column;
-            gap: 15px;
+            gap:10px;
+          }
+
+          .proposition_partenaire{
+            display: flex;
+            flex-direction: column;
+            gap:10px;
+          }
+
+          .mentions_contact{
+            display: flex;
+            flex-direction: column;
+            gap:10px;
           }
 
           footer .footer_logo{
@@ -662,19 +674,42 @@ a {
                /****** Fonctionnement ***********/
 
         .fonctionnement{
-            width: 100%;
-        }
-        .titre-filtre{
-            width: 75%;
+            width: 70%;
             padding-left: 200px;
+            padding-bottom:30px;
+        }
+        .titre-filtre{   
+         
+        }
+
+        .bouton-filtre {
+            background-color: #F6F6F6;
+            box-shadow: 0px 4px 15px 0px #000000;
+            border-radius: 20px 20px 20px 20px;
+            font-family: "Raleway", sans-serif;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 17px;
+            line-height: 21.13px;
+            color: #000000;
+            text-align: center;
+            height: 80px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            text-decoration: none;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            width: 100%;  
+    
         }
         .filtre-choix{
             display:flex;
             flex-direction: row;
             align-items: normal; 
-            gap: 30px; 
-            width: 75%;
-            padding-left: 200px;
+            width:95%;
+            gap: 15px;
         } 
         
         .bouton-choix{    
@@ -687,7 +722,7 @@ a {
             text-align: center;
             white-space: nowrap;
             overflow: hidden;
-            margin-right: 80px;
+
             
             }
 
@@ -700,16 +735,29 @@ a {
                 margin-top:0px;  
                 height: 114px;
                 padding-top: 40px; 
-                padding-left: 380px; 
+                justify-content: right;
+                padding-right:20px;
             }
 
             footer .footer_choix{
                 padding-top: 40px;
                 display: flex;
                 flex-direction: row;
-                gap: 15px;
-                padding-left: 40px;
+                gap: 50px;
+              
 
+            }
+
+            footer .proposition_partenaire{
+                display: flex;
+                flex-direction: row;
+                gap:15px;
+            }
+
+            footer .mentions_contact{
+                display: flex;
+                flex-direction: row;
+                gap:15px;
             }
 
             footer .footer_logo {
