@@ -24,7 +24,8 @@
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(currentColor 0 0) 0 calc(var(--s, 0) * -100%)/100% 33.3333333333%, repeating-linear-gradient(90deg, currentColor 0 25%, rgba(0, 0, 0, 0) 0 50%) calc(var(--s, 0) * 100%) 50%/133.3333333333% 33.3333333333%;
+  background: linear-gradient( #9356DC, #FF79DA);
+  
   background-repeat: no-repeat;
   animation: loader 2s infinite;
   animation-delay: 1s;
@@ -39,7 +40,7 @@
     opacity: 1;
   }
   10% {
-    transform: translateY(calc(var(--s, 1) * 0));
+    transform: translateY(calc(var(--s, 1) * 0%));
     background-position: 0 calc(var(--s, 0) * -100%), calc(var(--s, 0) * 100%) 50%;
   }
   33% {
@@ -51,7 +52,7 @@
     background-position: 0 calc(var(--s, 0) * -100%), calc(var(--s, 0) * 100% + 100%) 50%;
   }
   90%, 100% {
-    transform: translateY(calc(var(--s, 1) * 0));
+    transform: translateY(calc(var(--s, 1) * 0%));
     opacity: 0;
     display: none;
     background-position: 0 calc(var(--s, 0) * -100%), calc(var(--s, 0) * 100% + 100%) 50%;
@@ -83,7 +84,6 @@
 body {
   display: flex;
   justify-content: center;
-  margin: 0px;
 }
 
 .main-container {
@@ -106,7 +106,6 @@ a {
 .card {
   background-color: white;
   border-radius: 20px;
-  padding: 5px;
   filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
 
@@ -194,7 +193,7 @@ header .vector {
   text-align: center;
 }
 
-.btn_explorer {
+.explorer .btn_explorer {
   background-color: white;
   border: 2px #D9D9D9 solid;
   border-radius: 25px 25px 25px 25px;
@@ -210,11 +209,14 @@ header .vector {
   background-image: linear-gradient(#9356DC, #FF79DA);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
   padding: 15px;
+  transition-property: all;
+  transition-duration: 2s;
 }
 
-.btn_explorer:hover {
-  background-image: linear-gradient(#FF79DA, #FF79DA);
-  box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.2509803922);
+.explorer .btn_explorer:hover {
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2509803922);
+  background-color: rgba(0, 0, 0, 0.8);
+  background-image: linear-gradient(#FF79DA, #9356DC);
 }
 
 .texte_reservez {
@@ -271,7 +273,7 @@ header .vector {
 }
 
 .ellipse {
-  width: 24px;
+  width: 26px;
   height: 24px;
   color: #F6F6F6;
   border-radius: 50%;
@@ -279,12 +281,14 @@ header .vector {
   text-align: center;
   background: #9356DC;
   position: relative;
-  margin-left: -10px;
+  margin-left: -15px;
+  padding-top: 2px;
 }
 
 .bouton-filtre {
-  background-color: #F6F6F6;
-  box-shadow: 0px 4px 15px 0px #000000;
+  background: #F6F6F6;
+  border-color: #F6F6F6;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1490196078);
   border-radius: 20px 20px 20px 20px;
   font-family: "Raleway", sans-serif;
   font-style: normal;
@@ -422,9 +426,9 @@ header .vector {
   margin-right: -27px;
   position: relative;
   opacity: 1;
-  color: #9747ff;
   transition-property: all;
-  transition-duration: 5s;
+  transition-duration: 2s;
+
 }
 
 .card-rating .full-heart {
@@ -463,7 +467,7 @@ header .vector {
   margin-right: 20px;
   color: #9747ff;
   transition-property: all;
-  transition-duration: 5s;
+  transition-duration: 2s;
 }
 
 .card-rating:hover .full-heart2 {
@@ -633,6 +637,8 @@ fooeter legal_footer {
     border-radius: 0px 0px 20px 20px;
     padding: 0px 15px 0px 15px;
     gap: 5px;
+    padding-bottom: 15px;
+    padding-top: 15px;
   }
   .restaurants-cards .card-title {
     margin-top: 10px;

@@ -18,9 +18,9 @@
 }
 
 body {
+
     display: flex;
     justify-content: center;
-    margin:0px;
 }
 
 .main-container {
@@ -83,7 +83,7 @@ a {
     }
 
     header .return{
-
+        padding-left: 20px;
         font-size: 20px;
         color: #353535;
 
@@ -129,6 +129,7 @@ border-radius: 50px 50px 0px 0px;
 position: relative;
 margin-top: -50px;
 padding-bottom: 30px;
+padding-left: 10px;
 }  
 
 .card-title{
@@ -144,13 +145,14 @@ padding-bottom: 30px;
     margin-inline-end: 0px;
     font-weight: bold;
     unicode-bidi: isolate;
+    white-space: nowrap;
 }
 
 .titre_menu{
     padding-top: 50px;
     display: flex;
     flex-direction: row;
-    gap: 80px;
+    gap: 30px;
     align-items: center;
     justify-content: center;
 }
@@ -279,7 +281,7 @@ padding-bottom: 30px;
     
     }
 
-    .btn_commander {
+    .commander .btn_commander {
         background-color: white;  
         border: 2px #D9D9D9 solid;
         border-radius: 25px 25px 25px 25px;
@@ -295,30 +297,47 @@ padding-bottom: 30px;
         background-image: linear-gradient(#9356DC, #FF79DA);
         box-shadow: 0px 4px 4px 0px #00000040;
         width: 186px;
+        transition-property: all;
+        transition-duration: 2s;
       }
 
-      .btn_commander:hover{
+      .commander .btn_commander:hover{
 
-        box-shadow: 0px 8px 8px 0px #00000040;
-        background-image: linear-gradient( #FF79DA, #FF79DA);
+        box-shadow: 0px 10px 10px #00000040;
+        background-color: rgba(0, 0, 0, 0.8);
+        background-image: linear-gradient(#FF79DA,#9356DC);  
       }
-      .validation_choix {
+    .menu_validation .validation_choix {
         opacity:0;
         width: 0px;
         background-color: #99E2D0;
         text-align: center;
-        margin-left: -90px;
+        margin-left: -120px;
         border-radius: 0px 15px 15px 0px;
         padding-top: 20px;
-        padding-left: 10px;
-        transition-property: all;
-        transition-duration: 2s;        
+        transition-property:tranform;
+        transform-origin: right;
+        transition-property: all 5s forwards;
+        transition-duration: 5s;
+        animation: slider2-left 5s forwards; 
+        animation-duration: 5s;
+ 
     }
 
+    @keyframes slider2-left {
+        from {
+          margin-left: 100%;
+        }
+        to {
+          margin-left: 0%;
+        }
+    }    
+
     .menu_validation:active .validation_choix {
-        opacity:1;
+        opacity: 1;
         width: 90px;
-        margin-left: 0px;        
+        margin-left: 0px;
+        border-radius: 0px 15px 15px 0px;
     }
 
     .menu_validation:active .price_check{
@@ -334,7 +353,7 @@ padding-bottom: 30px;
         border: 1px #D9D9D9 solid;
         text-align: center;
         background: white;
-        margin-right: 10px;
+
         padding: 2px;
 
      }
@@ -342,16 +361,21 @@ padding-bottom: 30px;
     .commander{
         text-align: center;
     }
+
+    .menu-rating {
+        margin-top: -15px;
+        position: relative;
+    }
     
     .menu-rating .like{
         font-size: 25px;
         margin-top: 15px;
         margin-right:-27px;
-        position:relative;
+        position:absolute;
         opacity: 1;
-        color: #9747ff;
         transition-property: all;
         transition-duration: 5s;
+        color:1px solid #101010;
     }
 
     .menu-rating .full-heart{
@@ -595,7 +619,7 @@ $menu-delay: $prog-menu-dur + $prog-menu-delay;
 
     }  
 
-    .validation_choix {
+    .menu_validation .validation_choix {
         opacity:0;
         width: 0px;
         background-color: #99E2D0;
@@ -604,16 +628,31 @@ $menu-delay: $prog-menu-dur + $prog-menu-delay;
         border-radius: 0px 15px 15px 0px;
         padding-top: 20px;
         padding-left: 10px;
+        transition-property:tranform;
+        transform-origin: right;
         transition-property: all;
-        transition-duration: 2s;        
+        transition-duration: 2s;
+        animation: slider-left 2s forwards; 
+        animation-duration: 2s; 
+    
     }
+
+      @keyframes slider-left {
+        from {
+          margin-left: 100%;
+        }
+        to {
+          margin-left: 0%;
+        }
+      }
+
 
     .menu_validation:hover .validation_choix {
         opacity:1;
         width: 60px;
-
         margin-left: -10px; 
-        text-align: right;       
+        text-align: right;
+               
     }
 
     .menu_validation:hover .price_check{
@@ -629,7 +668,7 @@ $menu-delay: $prog-menu-dur + $prog-menu-delay;
         border: 1px #D9D9D9 solid;
         text-align: center;
         background: white;
-        margin-right: 20px;
+        margin-right: 30px;
         padding: 2px;
 
      }
