@@ -181,7 +181,6 @@ header .logo_site {
   background: none;
   margin-bottom: 50px;
   width: 95%;
-  margin-left: 10px;
 }
 
 .menu-choix {
@@ -190,7 +189,6 @@ header .logo_site {
   align-items: normal;
   justify-content: center;
   gap: 15px;
-  width: 100%;
 }
 
 .menu_validation {
