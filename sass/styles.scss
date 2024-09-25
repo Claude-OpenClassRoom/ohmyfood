@@ -28,9 +28,9 @@
   inset:0;
   background:linear-gradient(#9356DC,#FF79DA );
   background-repeat: no-repeat;
-  animation: loader 2s infinite; 
+  animation: loader 2s forwards; 
   animation-delay: 1s;
-    
+
 }
 .loader::after {
   --s:-1;
@@ -43,7 +43,7 @@
     66%  {transform:translateY(calc(var(--s,1)*-20%));background-position: 0 calc(var(--s,0)*-100%),calc(var(--s,0)*100% + 100%) 50%}
     90%,
     100%  {transform:translateY(calc(var(--s,1)* 0%)); opacity: 0;
-      display:none; background-position: 0 calc(var(--s,0)*-100%),calc(var(--s,0)*100% + 100%) 50%}
+      display:none; background-position: 0 calc(var(--s,0)*-100%),calc(var(--s,0)*100% + 100%) 100%}
     
   }
 
@@ -209,6 +209,8 @@ a {
         box-shadow: 0px 10px 10px #00000040;
         background-color: rgba(0, 0, 0, 0.8);
         background-image: linear-gradient(#FF79DA,#9356DC);  
+        opacity:0.6;
+
       }
 
       .texte_reservez{
@@ -425,7 +427,7 @@ a {
             opacity: 1;
             transition-property: all;
             transition-duration: 2s;
-            color: #fffafa00;
+            
         }
 
         .card-rating .full-heart{
