@@ -280,7 +280,7 @@ a {
 
         .bouton-filtre {   
         background: #F6F6F6;
-        border-color: #F6F6F6;        ;
+        border-color: #F6F6F6;        
         box-shadow: 0px 4px 15px 0px #00000026;
         border-radius: 20px 20px 20px 20px;
         font-family: 'Raleway', sans-serif;
@@ -683,7 +683,7 @@ a {
         }
         .bouton-filtre {
             background-color: #F6F6F6;
-            box-shadow: 0px 4px 15px 0px #000000;
+            box-shadow: 0px 4px 15px 0px #00000026;
             border-radius: 20px 20px 20px 20px;
             font-family: "Raleway", sans-serif;
             font-style: normal;
@@ -692,7 +692,7 @@ a {
             line-height: 21.13px;
             color: #000000;
             text-align: center;
-            height: 80px;
+            height: 60px;
             box-sizing: border-box;
             display: flex;
             flex-direction: row;
@@ -701,14 +701,14 @@ a {
             padding-top: 30px;
             padding-bottom: 30px;
             width: 100%;  
-    
+            background: #F6F6F6;
         }
         .filtre-choix{
             display:flex;
             flex-direction: row;
             align-items: normal; 
             width:95%;
-            gap: 20px;
+            gap: 30px;
         } 
         
         .bouton-choix{    
@@ -721,9 +721,10 @@ a {
             text-align: center;
             white-space: nowrap;
             overflow: hidden;
-
+            padding-right: 40px;
+        }
             
-            }
+            
 
              /****** Footer ***********/
 
