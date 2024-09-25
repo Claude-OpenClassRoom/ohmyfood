@@ -38,11 +38,11 @@
 }
 @keyframes loader {
     0%   {opacity:1;}
-    10%  {transform:translateY(calc(var(--s,1)*0));   background-position: 0 calc(var(--s,0)*-100%),calc(var(--s,0)*100%) 50%}
+    10%  {transform:translateY(calc(var(--s,1)* 0%));   background-position: 0 calc(var(--s,0)*-100%),calc(var(--s,0)*100%) 50%}
     33%  {transform:translateY(calc(var(--s,1)*-20%));background-position: 0 calc(var(--s,0)*-100%),calc(var(--s,0)*100%) 50%}
     66%  {transform:translateY(calc(var(--s,1)*-20%));background-position: 0 calc(var(--s,0)*-100%),calc(var(--s,0)*100% + 100%) 50%}
     90%,
-    100%  {transform:translateY(calc(var(--s,1)*0)); opacity: 0;
+    100%  {transform:translateY(calc(var(--s,1)* 0%)); opacity: 0;
       display:none; background-position: 0 calc(var(--s,0)*-100%),calc(var(--s,0)*100% + 100%) 50%}
     
   }
@@ -425,7 +425,7 @@ a {
             opacity: 1;
             transition-property: all;
             transition-duration: 2s;
-            color: solid #fffafa00;
+            color: #fffafa00;
         }
 
         .card-rating .full-heart{
