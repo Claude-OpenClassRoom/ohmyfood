@@ -15,12 +15,6 @@
   color: var(--main-color);
 }
 
-body {
-  display: block;
-  justify-content: center;
-  margin: 0px;
-}
-
 .main-container {
   max-width: 1440px;
   box-sizing: border-box;
