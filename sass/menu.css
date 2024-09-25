@@ -84,7 +84,6 @@ header .return {
 }
 
 header .logo {
-  float: center;
   width: 197px;
   font-family: "Shrinkhand", sans-serif;
   height: 36px;
@@ -303,7 +302,6 @@ header .logo_site {
   padding-top: 20px;
   transition-property: tranform;
   transform-origin: right;
-  transition-property: all 5s forwards;
   transition-duration: 5s;
   animation: slider2-left 5s forwards;
   animation-duration: 5s;
@@ -356,7 +354,7 @@ header .logo_site {
   opacity: 1;
   transition-property: all;
   transition-duration: 5s;
-  color: 1px solid #101010;
+  color: #101010;
 }
 
 .menu-rating .full-heart {
@@ -455,7 +453,7 @@ footer .hand {
 
 footer .texte_footer {
   font-family: "Roboto", sans-serif;
-  font-weight: 500px;
+  font-weight: 500;
   font-size: 16px;
   line-height: 19px;
   color: #FFFFFF;

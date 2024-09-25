@@ -9,6 +9,7 @@
   color: #514b82;
   position: absolute;
   animation: cache 2s forwards;
+
 }
 
  @keyframes cache {
@@ -25,9 +26,7 @@
   content: "";
   position: absolute;
   inset:0;
-  background:
-    linear-gradient(currentColor 0 0) 0 calc(var(--s,0)*-100%)/100% calc(100%/3),
-    repeating-linear-gradient(90deg,currentColor 0 25%,#0000 0 50%) calc(var(--s,0)*100%) 50%/calc(4*100%/3) calc(100%/3);
+  background:linear-gradient(#9356DC,#FF79DA );
   background-repeat: no-repeat;
   animation: loader 2s infinite; 
   animation-delay: 1s;
