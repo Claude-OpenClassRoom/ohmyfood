@@ -115,7 +115,6 @@ header .logo_site {
   position: relative;
   margin-top: -50px;
   padding-bottom: 30px;
-  padding-left: 20px;
   box-sizing: border-box;
 }
 
@@ -139,9 +138,14 @@ header .logo_site {
   padding-top: 50px;
   display: flex;
   flex-direction: row;
-  gap: 30px;
   align-items: center;
   justify-content: center;
+  width: 100%;
+  text-align: center;
+}
+
+.menu-txt {
+  width: 90%;
 }
 
 .titre-menu {
@@ -173,7 +177,9 @@ header .logo_site {
   margin-top: 20px;
   background: none;
   margin-bottom: 50px;
-  width: 95%;
+  padding-left: 20px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .menu-choix {
@@ -188,6 +194,7 @@ header .logo_site {
   display: flex;
   flex-direction: row;
   width: 100%;
+  position: relative;
 }
 
 .bouton-choix {
@@ -197,6 +204,10 @@ header .logo_site {
   font-size: 18px;
   line-height: 21.13px;
   color: #000000;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 90%;
 }
 
 .bouton-menu {
@@ -222,7 +233,7 @@ header .logo_site {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  width: 90%;
+  width: 60%;
 }
 
 .description_choix {
@@ -237,8 +248,8 @@ header .logo_site {
 }
 
 .price_check {
-  width: 10%;
-  text-align: center;
+  width: 40%;
+  text-align: right;
 }
 
 .prix {
@@ -284,7 +295,7 @@ header .logo_site {
   box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2509803922);
   background-color: rgba(0, 0, 0, 0.8);
   background-image: linear-gradient(#FF79DA, #9356DC);
-  opacity: 0.6;
+  opacity: 0.4;
 }
 
 .menu_validation .validation_choix {
@@ -292,7 +303,6 @@ header .logo_site {
   width: 0px;
   background-color: #99E2D0;
   text-align: center;
-  margin-left: -120px;
   border-radius: 0px 15px 15px 0px;
   padding-top: 20px;
   transition-property: tranform;
@@ -312,13 +322,13 @@ header .logo_site {
 }
 .menu_validation:active .validation_choix {
   opacity: 1;
-  width: 90px;
-  margin-left: 0px;
   border-radius: 0px 15px 15px 0px;
+  width: 50px;
+  margin-left: 0px;
 }
 
 .menu_validation:active .price_check {
-  margin-left: -10px;
+  margin-left: -40px;
 }
 
 .check {
@@ -339,7 +349,7 @@ header .logo_site {
 .menu-rating {
   margin-top: -15px;
   position: relative;
-  margin-left: -5px;
+  width: 10%;
 }
 
 .menu-rating .like {
@@ -492,7 +502,7 @@ fooeter legal_footer {
 /* Le code ci-dessous correspond à la version responsive uniquement */
 /****** Media queries ***********/
 /* Large devices (tablets, desktop less/equal than 1440px) */
-@media (min-width: 767.98px) {
+@media (min-width: 1024px) {
   /****** Header *******/
   header .logo_return {
     display: flex;
@@ -526,6 +536,22 @@ fooeter legal_footer {
     border-bottom: 3px #99E2D0 solid;
     padding-bottom: 5px;
     width: 5%;
+  }
+  .titre_menu {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .menu-txt {
+    width: 50%;
+  }
+  .menu-rating {
+    margin-top: -15px;
+    position: relative;
+    margin-left: -55px;
   }
   .section-menu {
     display: flex;
@@ -637,4 +663,6 @@ fooeter legal_footer {
   footer footer_texte {
     white-space: nowrap;
   }
-}/*# sourceMappingURL=menu.css.map */
+}
+/****** Media queries ***********/
+/* medium devices (tablets, desktop less/equal than 767.98 px) */ /*# sourceMappingURL=menu.css.map */
