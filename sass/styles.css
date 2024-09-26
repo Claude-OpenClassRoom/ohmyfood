@@ -83,11 +83,14 @@
 body {
   display: flex;
   justify-content: center;
+  max-width: 1440px;
+  box-sizing: border-box;
 }
 
 .main-container {
   max-width: 1440px;
   box-sizing: border-box;
+  margin: 0px;
 }
 
 a {

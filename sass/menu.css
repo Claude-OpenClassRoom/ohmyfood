@@ -15,6 +15,13 @@
   color: var(--main-color);
 }
 
+body {
+  max-width: 1440px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+}
+
 .main-container {
   max-width: 1440px;
   box-sizing: border-box;
@@ -78,7 +85,6 @@ header .return {
 }
 
 header .logo {
-  width: 197px;
   font-family: "Shrinkhand", sans-serif;
   height: 36px;
   margin-top: 30px;
@@ -145,7 +151,7 @@ header .logo_site {
 }
 
 .menu-txt {
-  width: 90%;
+  width: 80%;
 }
 
 .titre-menu {
@@ -177,12 +183,13 @@ header .logo_site {
   margin-top: 20px;
   background: none;
   margin-bottom: 50px;
-  padding-left: 20px;
+  padding-left: 10px;
   width: 100%;
   box-sizing: border-box;
 }
 
 .menu-choix {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: normal;
@@ -193,7 +200,7 @@ header .logo_site {
 .menu_validation {
   display: flex;
   flex-direction: row;
-  width: 100%;
+  width: 95%;
   position: relative;
 }
 
@@ -207,7 +214,8 @@ header .logo_site {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  width: 90%;
+  width: 80%;
+  padding-bottom: 5px;
 }
 
 .bouton-menu {
@@ -223,6 +231,7 @@ header .logo_site {
   padding-bottom: 15px;
   padding-top: 15px;
   gap: 8px;
+  padding-left: 10px;
 }
 
 .description {
@@ -233,7 +242,7 @@ header .logo_site {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  width: 60%;
+  width: 80%;
 }
 
 .description_choix {
@@ -248,7 +257,8 @@ header .logo_site {
 }
 
 .price_check {
-  width: 40%;
+  width: 20%;
+  margin-left: -15px;
   text-align: right;
 }
 
@@ -294,8 +304,8 @@ header .logo_site {
 .commander .btn_commander:hover {
   box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2509803922);
   background-color: rgba(0, 0, 0, 0.8);
-  background-image: linear-gradient(#FF79DA, #9356DC);
-  opacity: 0.4;
+  background-image: linear-gradient(#9356DC, #FF79DA);
+  opacity: 0.6;
 }
 
 .menu_validation .validation_choix {
@@ -349,7 +359,7 @@ header .logo_site {
 .menu-rating {
   margin-top: -15px;
   position: relative;
-  width: 10%;
+  width: 20%;
 }
 
 .menu-rating .like {
@@ -473,6 +483,7 @@ fooeter legal_footer {
 
 /*Animations des menus */
 .menu-choix {
+  width: 100%;
   opacity: 0;
   transform-origin: top;
   animation: slide 2s 1200ms forwards;
