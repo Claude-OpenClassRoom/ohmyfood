@@ -229,7 +229,9 @@ header .vector {
 
 /****** Fonctionnement ***********/
 .fonctionnement {
-  width: 100%;
+  width: 90%;
+  padding-left: 20px;
+  padding-bottom: 60px;
 }
 
 .section-filtre {
@@ -245,7 +247,7 @@ header .vector {
   display: flex;
   flex-direction: column;
   align-items: normal;
-  gap: 15px;
+  gap: 30px;
   margin-left: 20px;
 }
 
@@ -321,11 +323,12 @@ header .vector {
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: 5px;
+  gap: 20px;
   margin-top: 0px;
   width: 100%;
   background: #F6F6F6;
-  padding-top: 30px;
+  padding-top: 60px;
+  padding-bottom: 80px;
 }
 
 .new {
@@ -344,12 +347,19 @@ header .vector {
   padding-right: 20px;
 }
 
+.restaurants-title {
+  width: 90%;
+  padding-left: 20px;
+}
+
 .restaurants-cards {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 15px;
+  gap: 20px;
   background: #F6F6F6;
+  width: 90%;
+  padding-left: 20px;
 }
 
 .restaurants-cards a {
@@ -481,7 +491,6 @@ footer {
   flex-direction: column;
   align-items: start;
   justify-content: center;
-  margin-top: 50px;
   background-color: #353535;
   padding-left: 20px;
   height: 200px;
@@ -575,6 +584,7 @@ fooeter legal_footer {
     width: 100%;
     padding-bottom: 30px;
     background: #F6F6F6;
+    gap: 30px;
   }
   .new {
     font-family: "Roboto", sans-serif;
