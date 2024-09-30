@@ -171,7 +171,7 @@ a {
      .reservation{
         width: 100%;
         background: #F6F6F6;
-        padding-bottom: 30px;
+        padding-bottom: 80px;
         margin-top: -15px;
      }
      
@@ -183,6 +183,7 @@ a {
         margin-top: -15px;
         width:100%;
         text-align: center;
+        padding-top: 50px;
      }
      
      .explorer{
@@ -205,7 +206,7 @@ a {
         background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
         box-shadow: 0px 4px 10px 0px #00000040;
         padding: 15px;
-
+        opacity: 0px;
       }
 
       .explorer .btn_explorer:hover{
@@ -228,7 +229,7 @@ a {
         width: 90%;
         padding-left: 20px;
         padding-bottom: 60px;
-  
+        padding-top: 50px;
     }   
 
     .section-filtre{    
@@ -295,7 +296,7 @@ a {
         line-height: 21.13px;
         color: #000000;
         text-align: center;
-        height: 60px;
+        height: 80px;
         box-sizing: border-box;
         display: flex;
         flex-direction:row;
@@ -691,7 +692,7 @@ a {
         .fonctionnement{
             width: 70%;
             padding-left: 200px;
-            padding-bottom:30px;
+            padding-bottom:60px;
         }
         .bouton-filtre {
             background-color: #F6F6F6;
@@ -718,7 +719,7 @@ a {
             display:flex;
             flex-direction: row;
             align-items: normal; 
-            gap: 30px;
+            gap: 40px;
         } 
         
         .bouton-choix{    

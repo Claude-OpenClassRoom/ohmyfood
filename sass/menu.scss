@@ -103,6 +103,7 @@ a {
         width:100%;
         height: 275px;
         object-fit: cover;
+        
     }
 
     header .palette_img{
@@ -310,6 +311,7 @@ box-sizing: border-box;
         background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
         box-shadow: 0px 4px 10px 0px #00000040;
         width: 186px;
+        opacity: 0px;
  
       }
 
@@ -631,7 +633,7 @@ $menu-delay: $prog-menu-dur + $prog-menu-delay;
         background: none;
         margin-bottom: 50px;
         width: 80%;
-        margin-left: 80px;
+        margin-left: 120px;
     }
 
     .bouton-menu{
