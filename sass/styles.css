@@ -181,6 +181,15 @@ header .vector {
   margin-top: -15px;
 }
 
+.reservation .texte_menu {
+  font-family: "Roboto", sans-serif;
+  font-size: 40px;
+  line-height: 46.88px;
+  text-align: center;
+  font-weight: 700;
+  text-align: center;
+}
+
 .reservez {
   display: flex;
   flex-direction: column;
@@ -200,7 +209,7 @@ header .vector {
   background-color: white;
   border: 1px white solid;
   border-radius: 25px 25px 25px 25px;
-  font-family: "Raleway", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
@@ -255,7 +264,7 @@ header .vector {
 }
 
 .bouton-choix {
-  font-family: "Raleway", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
@@ -294,7 +303,7 @@ header .vector {
   border-color: #F6F6F6;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1490196078);
   border-radius: 20px 20px 20px 20px;
-  font-family: "Raleway", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
@@ -577,6 +586,7 @@ fooeter legal_footer {
     width: 100%;
   }
   .reservation .texte_menu {
+    font-family: "Roboto", sans-serif;
     font-weight: 700;
     font-size: 40px;
     line-height: 46.88px;
@@ -673,7 +683,7 @@ fooeter legal_footer {
     background-color: #F6F6F6;
     box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1490196078);
     border-radius: 20px 20px 20px 20px;
-    font-family: "Raleway", sans-serif;
+    font-family: "Roboto", sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 17px;
@@ -697,7 +707,7 @@ fooeter legal_footer {
     gap: 40px;
   }
   .bouton-choix {
-    font-family: "Raleway", sans-serif;
+    font-family: "Roboto", sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 17px;

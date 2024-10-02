@@ -285,7 +285,7 @@ header .logo_site {
   background-color: white;
   border: 1px #D9D9D9 solid;
   border-radius: 25px 25px 25px 25px;
-  font-family: "Raleway", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
@@ -333,10 +333,6 @@ header .logo_site {
   border-radius: 0px 15px 15px 0px;
   width: 50px;
   margin-left: 0px;
-}
-
-.menu_validation:active .price_check {
-  margin-left: -40px;
 }
 
 .check {
@@ -617,7 +613,6 @@ fooeter legal_footer {
     margin-left: -80px;
     border-radius: 0px 15px 15px 0px;
     padding-top: 20px;
-    padding-left: 10px;
     transition-property: tranform;
     transform-origin: right;
     transition-property: all;
@@ -636,11 +631,6 @@ fooeter legal_footer {
   .menu_validation:hover .validation_choix {
     opacity: 1;
     width: 60px;
-    margin-left: -10px;
-    text-align: right;
-  }
-  .menu_validation:hover .price_check {
-    margin-left: 60px;
   }
   .check {
     width: 20px;
@@ -650,8 +640,6 @@ fooeter legal_footer {
     border: 1px #D9D9D9 solid;
     text-align: center;
     background: white;
-    margin-right: 30px;
-    padding: 2px;
   }
   .commander {
     text-align: center;
