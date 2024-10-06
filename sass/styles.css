@@ -188,15 +188,25 @@ header .vector {
 }
 
 input {
-  border: 1px #EAEAEA solid;
+  border: none;
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 21.13px;
-  color: #000000;
   background: #EAEAEA;
   text-align: left;
+}
+
+.input_text:active {
+  display: block;
+  border-style: none;
+  outline: none;
+}
+
+.form-column-text:active {
+  border-style: none;
+  outline: none;
 }
 
 /****** réservation ***********/
@@ -247,7 +257,9 @@ input {
   background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
   padding: 15px;
-
+  opacity: 0px;
+  transition-property: all;
+  transition-duration: 2s;
 }
 
 .explorer .btn_explorer:hover {
@@ -286,7 +298,6 @@ input {
   flex-direction: column;
   align-items: normal;
   gap: 30px;
-  margin-left: 20px;
 }
 
 .bouton-choix {
@@ -855,7 +866,9 @@ header nav {
   background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
   width: 186px;
-
+  opacity: 0px;
+  transition-property: all;
+  transition-duration: 2s;
 }
 
 .commander .btn_commander:hover {
@@ -1206,7 +1219,6 @@ fooeter legal_footer {
     display: flex;
     flex-direction: row;
     align-items: normal;
-    gap: 40px;
   }
   .bouton-choix {
     font-family: "Roboto", sans-serif;
@@ -1218,7 +1230,7 @@ fooeter legal_footer {
     text-align: center;
     white-space: nowrap;
     overflow: hidden;
-    padding-right: 40px;
+    padding-right: 5px;
   }
   /****** Footer ***********/
   footer {

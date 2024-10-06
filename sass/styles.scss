@@ -185,17 +185,29 @@ a {
         }
         
         input {
-                border: 1px #EAEAEA solid;
+                border: none;
                 font-family: "Roboto", sans-serif;
                 font-style: normal;
                 font-weight: 700;
                 font-size: 18px;
                 line-height: 21.13px;
-                color: #000000;
                 background: #EAEAEA; 
-                text-align:left;                             
+                text-align:left; 
+                                          
         }
-     /****** réservation ***********/
+
+        .input_text:active {
+               display:block;
+               border-style: none;
+               outline: none;
+        } 
+        
+        .form-column-text:active{
+            border-style:none;
+            outline: none;
+        }
+        
+        /****** réservation ***********/
      .reservation{
         width: 100%;
         background: #F6F6F6;
@@ -244,6 +256,8 @@ a {
         box-shadow: 0px 4px 10px 0px #00000040;
         padding: 15px;
         opacity: 0px;
+        transition-property: all;
+        transition-duration: 2s;
       }
 
       .explorer .btn_explorer:hover{
@@ -283,7 +297,6 @@ a {
             flex-direction: column;
             align-items: normal; 
             gap: 30px; 
-            margin-left: 20px;
         }
 
         .bouton-choix{    
@@ -878,6 +891,8 @@ a {
             box-shadow: 0px 4px 10px 0px #00000040;
             width: 186px;
             opacity: 0px;
+            transition-property: all;
+            transition-duration: 2s;
      
           }
     
@@ -1268,7 +1283,6 @@ a {
             display:flex;
             flex-direction: row;
             align-items: normal; 
-            gap: 40px;
         } 
         
         .bouton-choix{    
@@ -1281,7 +1295,7 @@ a {
             text-align: center;
             white-space: nowrap;
             overflow: hidden;
-            padding-right: 40px;
+            padding-right: 5px;
         }
             
             
