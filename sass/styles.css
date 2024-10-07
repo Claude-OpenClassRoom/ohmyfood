@@ -262,7 +262,7 @@ input {
   transition-duration: 2s;
 }
 
-.explorer .btn_explorer:hover {
+.explorer .btn_explorer:active {
   box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2509803922);
   background-image: linear-gradient(#9356DC, #FF79DA);
   opacity: 0.8;
@@ -871,7 +871,7 @@ header nav {
   transition-duration: 2s;
 }
 
-.commander .btn_commander:hover {
+.commander .btn_commander:active {
   box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2509803922);
   background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
   opacity: 0.8;
@@ -1087,7 +1087,7 @@ fooeter legal_footer {
     transform: scaleY(1);
   }
 }
-/* Le code ci-dessous correspond à la version responsive uniquement */
+/* Le code ci-dessous correspond à la version responsive ACCEUIL uniquement */
 /****** Media queries ***********/
 /* Large devices (tablets, desktop less/equal than 1440px) */
 @media (min-width: 1024px) {
@@ -1106,6 +1106,31 @@ fooeter legal_footer {
     font-size: 40px;
     line-height: 46.88px;
     text-align: center;
+  }
+  .explorer .btn_explorer {
+    background-color: white;
+    border: 1px white solid;
+    border-radius: 25px 25px 25px 25px;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 21.13px;
+    color: #FFFFFF;
+    text-align: center;
+    height: 50px;
+    box-sizing: border-box;
+    background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
+    padding: 15px;
+    opacity: 0px;
+    transition-property: all;
+    transition-duration: 2s;
+  }
+  .explorer .btn_explorer:hover {
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2509803922);
+    background-image: linear-gradient(#9356DC, #FF79DA);
+    opacity: 0.8;
   }
   /****** restaurants ***********/
   .restaurants {
@@ -1401,6 +1426,31 @@ fooeter legal_footer {
   }
   .commander {
     text-align: center;
+  }
+  .commander .btn_commander {
+    background-color: white;
+    border: 1px #D9D9D9 solid;
+    border-radius: 25px 25px 25px 25px;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 21.13px;
+    color: #FFFFFF;
+    text-align: center;
+    height: 50px;
+    box-sizing: border-box;
+    background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
+    width: 186px;
+    opacity: 0px;
+    transition-property: all;
+    transition-duration: 2s;
+  }
+  .commander .btn_commander:hover {
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2509803922);
+    background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+    opacity: 0.8;
   }
   /****** Footer ***********/
   footer {
